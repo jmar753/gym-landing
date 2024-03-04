@@ -3,9 +3,7 @@ export default function Layout(props) {
     return (
     <>
         <Header />
-        <br />
-            {props.children}
-        <br />
+        {props.children}
     </>
 
     )
