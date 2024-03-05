@@ -6,12 +6,13 @@ import styles from "@/styles/Home.module.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const navOptions = [
-    {value:"Locations", route:"/Locations"},
-    {value:"Amenities", route:"/Amenities"},
-    {value:"Group Fitness", route:"/Group"},
-    {value:"Training", route:"/Training"},
-    {value:"Membership", route:"/Membership"},
+  const cardOptions = [
+    {value:"LOCATIONS", passage:"With 16 locations and counting, our network of clubs is one of the fastest growing in the country. See what we have to offer in your area."},
+    {value:"WELLNESS", passage:"At BROVATI, we can help with our hostilic approach to health and fitness. Gain a deeper sense of well being and satisfaction with our specially-designed classes led by progressional instructors in our inviting, inspiring, boutique-style studios."},
+    {value:"AMENITIES", passage:"From the moment you step inside, you'll see BROVATI is clearly different from other clubs. Premium amenities, cutting-edge equipment, inspiring spaces and a spa-like atmosphere await you."},
+    {value:"CLASSES", passage:"We offer the widest selection of class options with up to 180 group fitness classes every week! All included with your membership."},
+    {value:"TRAINING", passage:"Looking for one-on-one guidance and motivation? Let one of our Certified Personal Trainers design a fitness program specifically tailored to your needs and preferences."},
+    {value:"MEMBERSHIP", passage:"Health and fitness should be an enjoyable experience. Our membership options give you the flexibility that works for your individual schedule, budget and above all, fitness goals."},
   ] 
   return (
     <div className="">
@@ -53,12 +54,23 @@ export default function Home() {
       </div>
 
       {/* Brovati Experience */}
-      <div className=" min-h-screen text-center border-b-0">
+      <div className=" min-h-screen text-center border-b-0 w-4/5 m-auto">
         <h1 className="text-3xl text-slate-500 font-light -mb-1">The Brovati</h1>
         <h1 className="text-6xl text-sky-400 font-semibold">Experience</h1>
-        <h1 className="text-3xl text-slate-500 font-light mt-20">Why Brovati?</h1>
-        <p className="py-10">We believe you deserve an elevated fitness experience where a healthier life and your personal best are all within reach. We are fitness that puts you first.</p>
-        <button className="text-slate-500 h-10 underline">Learn More</button>
+        {/* Grid for Cards */}
+        <div className="flex justify-center p-20">
+          <div className="h-[500px]">
+            <div className=" w-[300px] shadow-xl">
+              <div className="bg-sky-400 h-[200px] text-left"></div>
+              <div className="p-7">
+                <h1 className="tracking-wide text-left font-bold text-sky-400 text-2xl">LOCATIONS</h1>
+                <p className="text-left py-7">With 16 locations and counting, our network of clubs is one of the fastest growing in the country. See what we have to offer in your area.</p>
+                <p className="text-left">Find a Club -</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   );

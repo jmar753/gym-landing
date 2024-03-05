@@ -32,7 +32,7 @@ export default function Header(){
                 <div className="bg-neutral-800 w-screen h-screen absolute left-0 top-0 opacity-40 md:hidden"></div>
                 <div className="text-base text-left absolute left-0 top-0 z-10 w-3/4 p-6 h-screen divide-y divide-neutral-200 bg-white opacity-100 md:hidden" ref={newRef}>
                     {navOptions.map((item, index) => (
-                        <button className="text-left text-neutral-900 w-full py-3 pr-3 my-1" onClick={() => {setCheck(false)}} key={index}>
+                        <button className="relative text-black hover:text-sky-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-sky-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-sky-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]" onClick={() => {setCheck(false)}} key={index}>
                                 {item.value}
                         </button>
                     ))}
@@ -47,9 +47,9 @@ export default function Header(){
             </div>
             <div className="hidden md:flex gap-10 justify-around">
                 {navOptions.map((item, index) => (
-                        <button className="hover:cursor-pointer transition px-1 duration-200 -my-1 hover:text-emerald-400" key={item.value}>
+                    <button className="relative text-white hover:text-sky-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-200 before:absolute before:bg-sky-400 before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-200 after:absolute after:bg-sky-400 after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]" onClick={() => {setCheck(false)}} key={index}>
                             {item.value}
-                        </button>
+                    </button>
                 ))}
             </div>
 
