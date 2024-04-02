@@ -20,78 +20,25 @@ export default function Home() {
   return (
     <div className="">
 
-      {/*IMAGE 1*/}
-      <div className="min-h-screen w-full bg-neutral-200 flex justify-center items-center">
-        <div className="grid grid-row-2">
+      {/*Carousel 1*/}
+      <div className="min-h-screen w-full bg-black flex justify-center items-center text-white">
+        <div className="grid grid-cols-2">
+          {/* Left Side Desktop */}
+          <div className="px-10 space-y-5">
 
-          <h1 className="text-6xl font-semibold">Do What <span className="text-sky-400">Motivates</span> You</h1>
-          
-          <div className="py-10"></div>
+            <h1 className="text-6xl font-semibold">Do What <span className="text-sky-400">Motivates</span> You</h1>
+            <p>Here at Brovati, we strive to see the best version of you. Our team will be here for you no matter what your goals at the gym are. Let’s get moving!</p>
 
-          <div className="flex justify-center items-center">
-            <button className="bg-sky-400 text-2xl w-44">Get Moving</button>
+            <div className="flex justify-evenly items-center">
+              <button className="bg-sky-400 text-2xl w-44">Get Moving</button>
+              <button className="bg-sky-400 text-2xl w-44">Get Moving</button>
+            </div>
           </div>
-        </div>
-      </div>
 
-      {/* Safety Protocols */}
-      <div className="min-h-screen text-center py-20 flex justify-center items-center">
-        <div className="w-4/5">
-          <h1 className="text-3xl text-slate-500 font-light -mb-1">Safety Protocols</h1>
-          <h1 className="text-6xl text-sky-400 font-semibold">Brovati Standards</h1>
-          <p className="py-10">We've always worked hard to ensure the highest level of safety and cleanliness in our fitness clubs. Now, you'll see even more of this as we adopt several new and enhanced cleaning procedures and safety measures.</p>
-          <button className="text-white bg-neutral-900 px-20 h-10">View Safety Protocols</button>
-        </div>
-      </div>
+          {/* Right Side Desktop */}
 
-      {/* Why Brovati  */}
-      <div className=" min-h-screen flex justify-center items-center text-center py-20 w-full">
-        <div className="border-solid border-b border-neutral-500 pb-14 w-4/5">
-          <div className="flex items-center justify-center">
-            <div className="w-3/4 bg-sky-400 h-[200px]"></div>
-          </div>
-          <h1 className="text-3xl text-sky-400 font-semibold mt-20">Why Brovati?</h1>
-          <p className="py-10">We believe you deserve an elevated fitness experience where a healthier life and your personal best are all within reach. We are fitness that puts you first.</p>
-          <button className="text-slate-500 h-10 underline">Learn More</button>
-        </div>
-      </div>
 
-      {/* Brovati Experience */}
-      <div className=" min-h-screen text-center border-b-0 w-4/5 m-auto">
-        <h1 className="text-3xl text-slate-500 font-light -mb-1">The Brovati</h1>
-        <h1 className="text-6xl text-sky-400 font-semibold pb-10">Experience</h1>
-        {/* Grid for Cards */}
-        <div className="relative w-full flex snap-x snap-mandatory overflow-x-auto pb-14">
-          {/* Section 1 */}
-          <div className="snap-center w-full flex justify-around shrink-0 first:pl-8 last:pr-8">
-            {cardOptions1.map((item, index) => (
-              <div className="h-[600px] w-[350px] shadow-xl rounded-md">
-                <div className="bg-sky-400 h-[200px] text-left"></div>
-                <div className="p-7 h-[400px] flex flex-col justify-between">
-                  <div className="">
-                    <h1 className="tracking-wide text-left font-bold text-sky-500 text-2xl">LOCATIONS</h1>
-                    <p className="text-left py-7 text-neutral-900 font-thin tracking-wide">With 16 locations and counting, our network of clubs is one of the fastest growing in the country. See what we have to offer in your area.</p>
-                  </div>
-                  <p className="text-left">Find a Club -</p>
-                </div>
-              </div>
-            ))}
-          </div>
-          {/* Section 2 */}
-          <div className="snap-center w-full flex justify-around shrink-0 first:pl-8 last:pr-8">
-            {cardOptions1.map((item, index) => (
-              <div className="h-[600px] w-[350px] shadow-xl rounded-md">
-                <div className="bg-sky-400 h-[200px] text-left"></div>
-                <div className="p-7 h-[400px] flex flex-col justify-between">
-                  <div className="">
-                    <h1 className="tracking-wide text-left font-bold text-sky-500 text-2xl">LOCATIONS</h1>
-                    <p className="text-left py-7 text-neutral-900 font-thin tracking-wide">With 16 locations and counting, our network of clubs is one of the fastest growing in the country. See what we have to offer in your area.</p>
-                  </div>
-                  <p className="text-left">Find a Club -</p>
-                </div>
-              </div>
-            ))}
-          </div>
+
         </div>
       </div>
     </div>

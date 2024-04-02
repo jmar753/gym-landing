@@ -26,7 +26,7 @@ export default function Header(){
     ]
 
     return(
-        <div className="bg-neutral-900 text-white w-full flex items-center justify-between h-20 fixed top-0 z-40 text-base py-2 px-2 md:px-11 md:shadow-md">
+        <div className="bg-neutral-600 text-white w-full flex items-center justify-between h-20 fixed top-0 z-40 text-base py-2 px-2 md:px-11 md:shadow-md">
             {check ? 
             <>
                 <div className="bg-neutral-800 w-screen h-screen absolute left-0 top-0 opacity-40 md:hidden"></div>
